@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#f8f9ff","surface":"#f8f9ff","on-primary-fixed":"#001551","on-tertiary-container":"#76eab6","surface-tint":"#2151da","error":"#ba1a1a","tertiary-fixed-dim":"#68dba9","surface-dim":"#cbdbf5","surface-container":"#e5eeff","inverse-primary":"#b7c4ff","outline":"#747686","on-primary-container":"#cad3ff","on-tertiary":"#ffffff","on-surface-variant":"#434655","tertiary":"#004f35","inverse-on-surface":"#eaf1ff","primary-fixed":"#dce1ff","error-container":"#ffdad6","on-primary":"#ffffff","primary":"#0037b0","on-secondary-fixed":"#131b2e","on-secondary-container":"#5c647a","on-error":"#ffffff","on-secondary":"#ffffff","primary-container":"#1d4ed8","surface-container-high":"#dce9ff","on-error-container":"#93000a","tertiary-container":"#006948","background":"#f8f9ff","surface-container-low":"#eff4ff","surface-variant":"#d3e4fe","secondary-fixed-dim":"#bec6e0","secondary-fixed":"#dae2fd","on-tertiary-fixed":"#002114","inverse-surface":"#213145","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary-fixed-variant":"#005137","on-primary-fixed-variant":"#0039b5","secondary":"#565e74","surface-container-highest":"#d3e4fe","on-secondary-fixed-variant":"#3f465c","surface-container-lowest":"#ffffff","secondary-container":"#dae2fd","outline-variant":"#c4c5d7","on-surface":"#0b1c30","tertiary-fixed":"#85f8c4"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"2rem","gutter-sm":"1rem","gutter":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem","space-xl":"2.5rem","space-md":"1rem","space-sm":"0.5rem","margin-sm":"1rem"},fontFamily:{"headline-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"],"body-sm":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"label-lg":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"metric-display":["Inter"]},fontSize:{"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-sm":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-xl":["36px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"metric-display":["32px",{lineHeight:"38px",letterSpacing:"-0.03em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="ECA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UzZhQPquhmapCgoXySMbmEjyxmTAgf06iUiDTR7sbx96AgsPXg3m4LPZJlFiUYyouCygr49U0JiXXM_vi6LhH8CjQpmzAsAAG_KeaKe-lnrogWO0oZt7fJcyh-sFTTjOPqvekJ7DBMnbDBobN66IsGU1T84ug_Zo4b_-LTL7YaahCzgsY9cMzYrAppaA1qFYMMoABgP04COS2cH9SuV0KhV9LkOm6FW9P2B6zOyCTSVciO1H5vA7eKcFfB"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">ECA Platform</span><span class="font-label-sm text-label-sm text-on-surface-variant">Conversion Intelligence</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Navigation</span></div><nav class="px-space-sm flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#">Conversion Overview Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="new-audit" href="#">New Audit</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="audits" href="#">Audits</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="recommendations" href="#">Recommendations</a><a aria-current="page" class="flex items-center px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-medium rounded-lg shadow-sm" data-path="improvement-plan" href="#">Improvement Plan</a></nav></div><div class="flex flex-col border-t border-outline-variant/30 pt-space-xs"><nav class="px-space-sm flex flex-col gap-space-xs pb-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="help-and-support" href="#">Help &amp; Support</a><a class="flex items-center px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#">Settings</a></nav><div class="p-space-sm border-t border-outline-variant/30 bg-surface-container-low/40"><div class="flex items-center gap-space-sm p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCniZXcnysvq2biO5f648NUu2I-n1QAQXDe2y2XI3yXkju4jayxX3WAtbhz5li-NwsmAvyqYe4nklEUWHzzoBkUMlk45RE6imp1XeQmfJewAV5eqF9TUUIPudH2eiSMdRb_nmFXSOYy-W4RZpp_5v4NnnFhXEo_NAFUSPVVAo2JD-HRd5Ffh0Njt3CtY83U0RLwXkPV2nudfX6Yx_E3zfYP9pcIEGh9NJ8teWV2t24xOL3iXR7dAjiLxQ"/><div class="flex flex-col flex-1 min-w-0"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sarah Lin</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">VP of E-Commerce</span></div><span class="material-symbols-outlined text-outline text-[18px]">unfold_more</span></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest border-b border-outline-variant/40 z-40 px-gutter flex items-center justify-between shadow-[0_1px_2px_rgba(15,23,42,0.04)]"><div class="flex items-center gap-space-md"><img alt="ECA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UzZhQPquhmapCgoXySMbmEjyxmTAgf06iUiDTR7sbx96AgsPXg3m4LPZJlFiUYyouCygr49U0JiXXM_vi6LhH8CjQpmzAsAAG_KeaKe-lnrogWO0oZt7fJcyh-sFTTjOPqvekJ7DBMnbDBobN66IsGU1T84ug_Zo4b_-LTL7YaahCzgsY9cMzYrAppaA1qFYMMoABgP04COS2cH9SuV0KhV9LkOm6FW9P2B6zOyCTSVciO1H5vA7eKcFfB"/><div class="flex items-center gap-space-xs"><div class="w-2 h-2 rounded-full bg-tertiary-container"></div><span class="font-label-sm text-label-sm text-tertiary font-semibold hidden sm:inline-block">All systems operational</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg border border-outline-variant/60 cursor-pointer hover:border-primary/40 transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">storefront</span><span class="font-label-md text-label-md text-on-surface font-semibold">nordic-apparel.com</span><span class="font-body-sm text-body-sm text-on-surface-variant">- Shopify Plus</span><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[18px]">search</span><input class="h-9 pl-8 pr-space-md py-1 bg-surface-container-low border border-outline-variant/60 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-64" placeholder="Search audits, metrics, issues..." type="search"/></div><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCniZXcnysvq2biO5f648NUu2I-n1QAQXDe2y2XI3yXkju4jayxX3WAtbhz5li-NwsmAvyqYe4nklEUWHzzoBkUMlk45RE6imp1XeQmfJewAV5eqF9TUUIPudH2eiSMdRb_nmFXSOYy-W4RZpp_5v4NnnFhXEo_NAFUSPVVAo2JD-HRd5Ffh0Njt3CtY83U0RLwXkPV2nudfX6Yx_E3zfYP9pcIEGh9NJ8teWV2t24xOL3iXR7dAjiLxQ"/></div></div></header><main class="w-full pt-16 bg-background px-gutter min-h-screen"><div class="flex flex-col w-full pb-margin">
+<!-- Top Header Section with Micro Metas and Direct Action Hub -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Sprint 14 Active
+        </span>
+<span class="text-outline text-label-sm font-label-sm">•</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Shopify Plus Production</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Improvement Plan</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        Track, prioritize, and manage conversion optimization fixes across your development workflow.
+      </p>
+</div>
+<!-- Actions Hub -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative flex items-center min-w-[220px]">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-low transition-colors" id="kanbanSearch" placeholder="Filter tasks or ARR impact..." type="text"/>
+</div>
+<!-- Assignee Filter Pill -->
+<div class="relative">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md shadow-sm flex items-center gap-2" id="assigneeFilterBtn">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">person</span>
+<span>Assignee</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Severity Filter Pill -->
+<div class="relative">
+<button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-colors font-label-md text-label-md shadow-sm flex items-center gap-2" id="severityFilterBtn">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Severity</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Primary CTA -->
+<button class="h-10 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:brightness-110 active:scale-[0.98] transition-all flex items-center gap-2 ml-1">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add Custom Task</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Pipeline Ribbon -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-xl">
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Pipeline ARR</span>
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">$153.8k</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +14.2%
+        </span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm">Across 7 prioritized conversion items</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Unrealized Opportunity</span>
+<span class="material-symbols-outlined text-error text-[20px]">hourglass_top</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">$88.3k</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">3 Pending</span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm">Blocked or awaiting engineering pickup</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Velocity &amp; Cycle Time</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">4.2d</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ fix avg</span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm">1.8d faster than benchmark e-comm teams</div>
+</div>
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Validated Realized</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">verified</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display text-on-surface tracking-tight">$21.5k</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Live in Prod</span>
+</div>
+<div class="mt-space-xs text-on-surface-variant font-body-sm text-body-sm">Audited CVR lift recorded in GA4 &amp; PostHog</div>
+</div>
+</div>
+<!-- Kanban Grid (3 Columns) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-start">
+<!-- COLUMN 1: TO DO -->
+<div class="flex flex-col bg-surface-container-low/60 rounded-xl p-space-md min-h-[640px]">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">To Do</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface font-semibold">3</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold block">$88.3k Projected Impact</span>
+</div>
+</div>
+<!-- Drag & Drop Column Body -->
+<div class="flex flex-col gap-space-md flex-1">
+<!-- Task Card 1 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-error">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">error</span>
+              Critical
+            </span>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Enable guest checkout &amp; remove forced registration
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Checkout
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">show_chart</span>
+              +$62k ARR
+            </span>
+</div>
+<!-- Subtasks status -->
+<div class="mb-space-md">
+<div class="flex justify-between items-center mb-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">checklist</span>
+                1 of 3 subtasks
+              </span>
+<span class="font-semibold">33%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-1.5 rounded-full bg-primary" style="width: 33%"></div>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Alex Rivera">
+                AR
+              </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alex Rivera</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-error font-medium">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              Due in 2 days
+            </div>
+</div>
+</div>
+<!-- Task Card 2 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-secondary-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+              High
+            </span>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Mobile numeric input type for payment zip/card
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Mobile UX
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">show_chart</span>
+              +$7.8k ARR
+            </span>
+</div>
+<!-- Subtasks status -->
+<div class="mb-space-md">
+<div class="flex justify-between items-center mb-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">checklist</span>
+                0 of 2 subtasks
+              </span>
+<span class="font-semibold">0%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-1.5 rounded-full bg-primary" style="width: 0%"></div>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Unassigned">
+<span class="material-symbols-outlined text-[14px]">person_add</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline italic">Unassigned</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+              Due in 5 days
+            </div>
+</div>
+</div>
+<!-- Task Card 3 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-surface-dim">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">info</span>
+              Medium
+            </span>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Free shipping threshold bar in cart drawer
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Cart Experience
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">show_chart</span>
+              +$18.5k ARR
+            </span>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Sarah Lin">
+                SL
+              </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sarah Lin</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[15px]">event</span>
+              Due next sprint
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: IN PROGRESS -->
+<div class="flex flex-col bg-surface-container-low/60 rounded-xl p-space-md min-h-[640px]">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">In Progress</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface font-semibold">2</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold block">$44.0k Projected Impact</span>
+</div>
+</div>
+<!-- Drag & Drop Column Body -->
+<div class="flex flex-col gap-space-md flex-1">
+<!-- Task Card 4 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-secondary-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                High
+              </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-medium">
+                In QA
+              </span>
+</div>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Restyle Add-to-Cart button contrast &amp; mobile sticky bar
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Product Page
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">show_chart</span>
+              +$22k ARR
+            </span>
+</div>
+<!-- Progress Bar -->
+<div class="mb-space-md">
+<div class="flex justify-between items-center mb-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+                Sprint Progress
+              </span>
+<span class="font-semibold text-primary">65%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-1.5 rounded-full bg-primary-container" style="width: 65%"></div>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Elena Rostova">
+                ER
+              </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Elena Rostova</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Design Review</span>
+</div>
+</div>
+<!-- Task Card 5 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-error">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">error</span>
+                Critical
+              </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-medium">
+                PR #342 Open
+              </span>
+</div>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Payment security trust badges on checkout step 2
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Trust &amp; Security
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">show_chart</span>
+              +$34k ARR
+            </span>
+</div>
+<!-- Subtasks status -->
+<div class="mb-space-md">
+<div class="flex justify-between items-center mb-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">commit</span>
+                CI / Integration Build
+              </span>
+<span class="font-semibold text-tertiary">Passing</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container">
+<div class="h-1.5 rounded-full bg-tertiary-container" style="width: 80%"></div>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Alex Rivera">
+                AR
+              </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alex Rivera</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="material-symbols-outlined text-[15px]">merge_type</span>
+              Ready to merge
+            </div>
+</div>
+</div>
+<!-- Drop zone placeholder indicator for visual polish -->
+<div class="h-24 rounded-xl border-2 border-dashed border-outline-variant/60 flex items-center justify-center text-outline font-label-sm text-label-sm">
+          Drag tasks here to update status
+        </div>
+</div>
+</div>
+<!-- COLUMN 3: COMPLETED -->
+<div class="flex flex-col bg-surface-container-low/60 rounded-xl p-space-md min-h-[640px]">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Completed</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface font-semibold">2</span>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold block">$21.5k Captured Value</span>
+</div>
+</div>
+<!-- Drag & Drop Column Body -->
+<div class="flex flex-col gap-space-md flex-1">
+<!-- Task Card 6 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-tertiary-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Resolved
+            </span>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Fix mobile footer privacy &amp; terms tap target sizes
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Navigation
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Resolved in v2.4.1 release
+            </span>
+</div>
+<!-- Impact verification box -->
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg mb-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">touch_app</span>
+              Zero tap misclicks recorded since rollout
+            </span>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Sarah Lin">
+                SL
+              </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sarah Lin</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+</div>
+<!-- Task Card 7 -->
+<div class="group relative bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all cursor-grab active:cursor-grabbing border-l-4 border-l-tertiary-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+              Resolved
+            </span>
+<div class="flex items-center gap-1 opacity-40 group-hover:opacity-100 transition-opacity">
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">drag_indicator</span>
+</button>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs leading-snug">
+            Customer review star ratings lazy loading above fold
+          </h3>
+<div class="flex items-center gap-2 mb-space-md">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Product Page
+            </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+              +0.4% CVR lift observed in AB test
+            </span>
+</div>
+<!-- Impact verification box -->
+<div class="p-space-xs px-space-sm bg-surface-container-low rounded-lg mb-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">speed</span>
+              LCP improved from 2.8s to 1.4s
+            </span>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm font-semibold ring-2 ring-surface-container-lowest" title="Alex Rivera">
+                AR
+              </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alex Rivera</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 days ago</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Global Summary Sticky Bar -->
+<div class="mt-space-xl p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md font-semibold">Total Pipeline Value:</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">$153.8k ARR</span>
+</div>
+<span class="text-outline-variant hidden md:inline">|</span>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-medium text-on-surface-variant">Active Queue:</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">7 Tasks active</span>
+</div>
+<span class="text-outline-variant hidden md:inline">|</span>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-medium text-on-surface-variant">Sprint Velocity:</span>
+<span class="font-label-md text-label-md font-semibold text-tertiary">4.2 days / fix</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+        Export Jira / CSV
+      </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+        Sync Backlog
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Interactive Micro-interactions for Kanban Filtering and Card Elevation
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('kanbanSearch');
+    const cards = document.querySelectorAll('.cursor-grab');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        cards.forEach((card) => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Visual drag-start / end simulation
+    cards.forEach((card) => {
+      card.addEventListener('mousedown', () => {
+        card.classList.add('scale-[0.99]', 'shadow-lg');
+      });
+      window.addEventListener('mouseup', () => {
+        card.classList.remove('scale-[0.99]', 'shadow-lg');
+      });
+    });
+  });
+</script></main></div></body></html>
